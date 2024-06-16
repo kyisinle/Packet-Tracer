@@ -1,0 +1,28 @@
+Network address = 192.168.40.0
+
+//number of subnets mean number of department
+//in our case 2 departments, 2 subnets
+
+No of subnets = 2
+
+2^n = no of subnets , 2^n = 2
+
+thus n = 1
+
+255.255.255.255 ( 8 bits )
+
+11111111.11111111.11111111.10000000 ( only 1 bit borrowed bc n = 1 ) ( binary )
+255.255.255.128 ( block size (1) = 7 , 2^7 = 128 ) === subnet mask
+
+1st subnet 
+Subnet mask = 255.255.255.128
+Network ID = 192.168.40.0
+Range of valid host = 192.168.40.1-192.168.40.126
+Broadcast ID = 192.168.40.127
+
+2nd subnet 
+Subnet mask = 255.255.255.128
+Network ID = 192.168.40.128
+Range of valid host = 192.168.40.129-192.168.40.254
+Broadcast ID = 192.168.40.255
+
